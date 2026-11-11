@@ -1,0 +1,16 @@
+:root{
+    --color-primary: #780000;
+    --color-secondary: #c1121f;
+    --color--third:#fdf0d5;
+    --color--fourth:#003049;
+    --color--fifth:#669bbc;
+    --font-primary: 'Montserrat', sans-serif;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}

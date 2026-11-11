@@ -1,0 +1,507 @@
+body{
+    min-height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-primary);
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: var(--color-secondary);
+    width: 100%;
+}
+
+.logo {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.conheca-mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+
+    height: calc(100dvh - 80px); 
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: #d9d9d9;
+    width: 100%;
+}
+
+
+button {
+    background-color: var(--color-secondary);
+    color: #ffffff;
+    font-family: var(--font-primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    width: auto;
+    min-width: 11rem;
+    padding: 0.8rem 1.8rem;
+    white-space: nowrap;
+}
+.title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    gap: 1rem;
+}
+
+.senai-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    color: var(--color-secondary);
+    gap: 1rem;
+}
+
+.sobre-senai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    min-height: 100dvh;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 3rem 1.5rem 4rem 1.5rem; 
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.sobre-title {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #000000;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin-top: 1rem; 
+}
+
+.sobre-title .senai-red {
+    color: var(--color-secondary);
+    font-style: italic;
+    font-size: inherit;
+}
+
+.sobre-title .jandira-text {
+    font-style: italic;
+    color: #000000;
+    font-size: inherit;
+}
+
+.sobre-text {
+    font-size: 1.30rem;      
+    line-height: 1.7;      
+    color: #333333;
+    max-width: 80%;          
+    margin-bottom: auto;     
+    margin-top: auto;
+}
+
+.missao, .visao, .valores {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    padding: 2.5rem 1.5rem;
+    gap: 1rem;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.section-text {
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+
+.missao {
+    background-color: var(--color--third);
+    text-align: center;
+}
+
+.missao .section-title {
+    color: var(--color-primary);
+}
+
+.missao .section-text {
+    color: var(--color-primary);
+}
+
+.visao {
+    background-color: var(--color-secondary);
+    text-align: center;
+}
+
+.visao .section-title,
+.visao .section-text {
+    color: var(--color--third);
+}
+
+.valores {
+    background-color: var(--color-primary);
+    text-align: center;
+}
+
+.valores .section-title,
+.valores .section-text {
+    color: var(--color--third)
+}
+
+footer {
+    background-color: var(--color-secondary);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    gap: 0.8rem;
+    width: 100%;
+    border-top: 3px solid var(--color--third);
+}
+
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    padding-bottom: 0.2rem;
+}
+
+footer .social-icons a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.footer-divider {
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--color--third);
+    margin-bottom: 0.5rem;
+}
+
+footer .footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    font-size: 0.7rem;
+    line-height: 1.3;
+}
+
+footer .address strong,
+footer .cep strong {
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+footer .address span {
+    font-size: 0.68rem;
+}
+
+footer .cep-phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer .phone {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+/*LAYOUT DO TABLET*/
+/*LAYOUT DO TABLET*/
+/*LAYOUT DO TABLET*/
+/*LAYOUT DO TABLET*/
+/*LAYOUT DO TABLET*/
+/*LAYOUT DO TABLET*/
+/*LAYOUT DO TABLET*/
+/*LAYOUT DO TABLET*/
+/*LAYOUT DO TABLET*/
+/*LAYOUT DO TABLET*/
+
+
+@media (min-width: 768px) {
+    
+    header {
+        padding: 1rem 3rem;
+        height: 10vh;
+        gap: 26rem;
+    }
+
+    header .logo {
+        font-size: 1rem;
+    }
+
+    .conheca-mapa {
+        padding: 5rem 4rem;
+        min-height: 60vh;
+    }
+
+    .conheca-mapa .title {
+        font-size: 3.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .conheca-mapa .senai-title {
+        font-size: 4rem;
+    }
+
+    button {
+            font-size: 1.3rem;
+            padding: 2rem 2.5rem;
+            min-width: 16rem;
+        }
+
+
+    .sobre-senai {
+        padding: 5rem 6rem;
+        gap: 2rem;
+    }
+
+    .sobre-title {
+        font-size: 2.5rem;
+    }
+
+    .sobre-text {
+        font-size: 3rem;
+        max-width: 90%;
+        line-height: 1.6;
+    }
+
+    .missao, .visao, .valores {
+        padding: 4rem 6rem;
+        gap: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 2.4rem;
+    }
+
+    .section-text {
+        font-size: 2.05rem;
+        line-height: 1.6;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        padding: 2rem 6rem;
+        gap: 1.2rem;
+    }
+
+    footer .social-icons a {
+        font-size: 1.5rem;
+    }
+
+    footer .footer-info {
+        font-size: 0.85rem;
+    }
+
+    footer .edificio-sede span {
+        font-size: 0.85rem;
+    }
+
+    footer .phone {
+        font-size: 1rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem 4rem;
+        gap: 1.2rem;
+        background-color: var(--color-secondary);
+    }
+}
+
+
+/*LAYOUT DO PC */
+/*LAYOUT DO PC */
+/*LAYOUT DO PC */
+/*LAYOUT DO PC */
+/*LAYOUT DO PC */
+/*LAYOUT DO PC */
+/*LAYOUT DO PC */
+/*LAYOUT DO PC */
+/*LAYOUT DO PC */
+/*LAYOUT DO PC */
+/*LAYOUT DO PC */
+
+
+@media (min-width: 1024px) {
+    
+    header {
+        padding: 1.2rem 8rem;
+        height: 80px;
+    }
+
+    header .logo {
+        font-size: 1.2rem;
+    }
+
+    .conheca-mapa {
+        padding: 6rem 2rem;
+        height: calc(100dvh - 80px);
+        justify-content: center;
+    }
+
+    .conheca-mapa .title {
+        font-size: 4.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .conheca-mapa .senai-title {
+        font-size: 5rem;
+    }
+
+    button {
+        font-size: 1.4rem;
+        padding: 1.2rem 3.5rem;
+        min-width: 16rem;
+    }
+
+    button:hover {
+        background-color: var(--color-primary);
+        transform: scale(1.05);
+    }
+
+    .sobre-senai {
+        padding: 6rem 2rem;
+        align-items: center;
+        min-height: 100dvh;
+    }
+
+    .sobre-title {
+        font-size: 3.5rem;
+    }
+
+    .sobre-text {
+        font-size: 3.8rem;
+        max-width: 80%;
+        line-height: 1.8;
+    }
+
+    .bloco-triplo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .missao, .visao, .valores {
+        width: 33.333%;
+        min-height: 380px;
+        padding: 4rem 3rem;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 2.4rem;
+    }
+
+    .section-text {
+        font-size: 1.15rem; 
+        line-height: 1.7;
+        max-width: 100%;
+    }
+
+   
+    footer {
+        padding: 4rem 10rem 3rem 10rem;
+        gap: 2.5rem;                  
+        margin-top: 8px;     
+    }
+
+    footer .social-icons {
+        gap: 2.5rem;
+    }
+
+    footer .social-icons a {
+        font-size: 2.2rem;
+    }
+
+    footer .footer-divider {
+        margin: 0.3rem 0;
+    }
+
+    footer .footer-info {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+
+    footer .edificio-sede strong {
+        font-size: 1.4rem;
+    }
+
+    footer .edificio-sede span {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    footer .cep-phone {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    footer .cep strong {
+        font-size: 1.4rem;
+    }
+
+    footer .cep {
+        font-size: 1.2rem;
+    }
+
+    footer .phone {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    
+    footer .phone i {
+        font-size: 1.4rem;
+        margin-right: 0.5rem;
+    }
+}

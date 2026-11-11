@@ -1,0 +1,171 @@
+/* ESTRUTURA BASE DO MAPA */
+body {
+    min-height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-primary);
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: var(--color-secondary);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.back-link {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.mapa-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+    width: 100%;
+    height: calc(100dvh - 80px);
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+}
+
+.mapa-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.mapa-box {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.mapa-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.pin-btn {
+    position: absolute;
+    background-color: rgba(255, 235, 59, 0.45);           
+    color: #000000;
+    font-weight: bold;
+    font-size: 0.75rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.pin-btn:hover {
+    background-color: rgba(255, 235, 59, 0.85);
+    transform: scale(1.05);
+}
+
+.pin-oficina {
+    top: 30%;
+    left: 4%;
+    width: 22%;
+    height: 45%;
+}
+
+.pin-refeitorio {
+    top: 30%;
+    left: 33%;
+    width: 21%;
+    height: 45%;
+}
+
+.pin-bloco-c-terreo {
+    top: 15%;
+    left: 60%;
+    width: 16%;
+    height: 25%;
+}
+
+.pin-bloco-c-superior {
+    top: 15%;
+    left: 82%;
+    width: 16%;
+    height: 25%;
+}
+
+.pin-bloco-b-terreo {
+    top: 55%;
+    left: 60%;
+    width: 16%;
+    height: 25%;
+}
+
+.pin-bloco-b-superior {
+    top: 55%;
+    left: 80%;
+    width: 16%;
+    height: 25%;
+}
+
+@media (max-width: 1023px) and (orientation: portrait) {
+    .mapa-wrapper {
+        transform: rotate(90deg);
+        width: calc(100dvh - 80px);
+        height: 100vw;
+    }
+
+    .mapa-box {
+        width: 92vh;
+        max-height: 95vw;
+    }
+
+    .mapa-img {
+        max-height: 95vw;
+    }
+}
+
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .mapa-box {
+        width: 95%;
+    }
+
+    .pin-btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .mapa-box {
+        width: 90%;
+    }
+
+    .pin-btn {
+        font-size: 1rem;
+    }
+}
